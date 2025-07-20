@@ -1,0 +1,59 @@
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+  margin: 1.5rem 0;
+}
+
+.login-form input {
+  padding: 0.6em 1.2em;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+  width: 80%;
+  background: #fff;
+  color: #22223b;
+  box-shadow: 0 2px 8px rgba(40, 10, 72, 0.10);
+  transition: border-color 0.2s;
+}
+
+.login-form input:focus {
+  border-color: #7925d3;
+  outline: none;
+}
+
+.login-form button {
+  padding: 0.6em 1.2em;
+  border-radius: 6px;
+  border: none;
+  background: #7925d3;
+  color: #fff;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.login-form button:hover {
+  background: #280a48;
+}
+
+.section-box p {
+  color: #4a4e69;
+  font-size: 1.1rem;
+  margin-bottom: 1.2rem;
+}
+
+/* Ensure error and success messages are not overridden by .section-box p */
+.error-message {
+  color: #ff3b3b !important;
+  font-weight: bold;
+  margin-top: 1rem;
+}
+
+.success-message {
+  color: #2ecc40 !important;
+  font-weight: bold;
+  margin-top: 1rem;
+}

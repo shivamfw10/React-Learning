@@ -1,0 +1,78 @@
+.todo-container {
+  background: #f5f5fa;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(40, 10, 72, 0.10);
+  padding: 1.5rem;
+  margin-top: 1rem;
+}
+
+.todo-container form {
+  display: flex;
+  gap: 0.5rem;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.todo-container input[type="text"] {
+  padding: 0.5rem;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+  width: 60%;
+}
+
+.todo-container button[type="submit"] {
+  padding: 0.6em 1.2em;
+  border-radius: 6px;
+  border: none;
+  background: #7925d3;
+  color: #fff;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.todo-container button[type="submit"]:hover {
+  background: #280a48;
+}
+
+.todo-container ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.todo-container li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #fff;
+  border-radius: 6px;
+  box-shadow: 0 1px 4px rgba(40, 10, 72, 0.08);
+  padding: 0.5rem 1rem;
+  margin-bottom: 0.5rem;
+  color: #22223b;
+  font-size: 1rem;
+}
+
+.todo-container .remove-btn {
+  background: #ff7e5f;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 0.3em 0.8em;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.todo-container .remove-btn:hover {
+  background: #feb47b;
+}
+
+.todo-container .empty {
+  color: #bdbdbd;
+  font-style: italic;
+  text-align: center;
+}
