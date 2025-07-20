@@ -1,0 +1,44 @@
+body {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #f8fafc 0%, #fcb69f 100%);
+}
+
+.app-content {
+  background: linear-gradient(135deg, #e0e0e0 0%, #bdbdbd 100%);
+  border-radius: 16px;
+  box-shadow: 0 8px 32px rgba(189, 189, 189, 0.18);
+  padding: 2.5rem 3rem;
+  text-align: center;
+  width: 100%;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  box-sizing: border-box;
+}
+
+h1, h2, h3 {
+  color: #22223b;
+  font-family: 'Quicksand', sans-serif;
+  margin-bottom: 1rem;
+  letter-spacing: 1px;
+}
+
+p {
+  color: #4a4e69;
+  font-size: 1.2rem;
+}
+
+h3.topic-heading {
+  color: #ff7e5f;
+  background: linear-gradient(90deg, #ff7e5f 0%, #feb47b 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  letter-spacing: 2px;
+}

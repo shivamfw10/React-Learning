@@ -1,0 +1,24 @@
+/* Shared section box styling for all components */
+.section-box {
+  background: linear-gradient(135deg, #f8fafc 0%, #e0e0e0 100%);
+  border-radius: 16px;
+  box-shadow: 0 4px 24px rgba(34, 34, 59, 0.12);
+  padding: 2rem 2.5rem;
+  text-align: center;
+  max-width: 400px;
+  margin: 2rem auto;
+  transition: background 0.3s;
+}
+
+.section-box h2, .section-box h3 {
+  color: #22223b;
+  font-size: 2rem;
+  font-family: 'Quicksand', sans-serif;
+  margin-bottom: 0.5rem;
+}
+
+.section-box p {
+  color: #4a4e69;
+  font-size: 1.1rem;
+  margin-bottom: 1.2rem;
+}

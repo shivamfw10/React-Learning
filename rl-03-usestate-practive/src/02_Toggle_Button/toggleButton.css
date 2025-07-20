@@ -1,0 +1,29 @@
+.toggle-btn {
+  padding: 0.8em 2em;
+  font-size: 1.2rem;
+  font-weight: bold;
+  border-radius: 30px;
+  border: none;
+  background: linear-gradient(90deg, #7925d3 0%, #03d5ff 100%);
+  color: #fff;
+  box-shadow: 0 4px 16px rgba(40, 10, 72, 0.15);
+  cursor: pointer;
+  transition: background 0.3s, box-shadow 0.3s, transform 0.2s;
+  outline: none;
+}
+
+.toggle-btn.on {
+  background: linear-gradient(90deg, #03d5ff 0%, #7925d3 100%);
+  box-shadow: 0 6px 24px rgba(3, 213, 255, 0.15);
+  transform: scale(1.05);
+}
+
+.toggle-btn.off {
+  background: linear-gradient(90deg, #7925d3 0%, #ea00ff 100%);
+  box-shadow: 0 2px 8px rgba(234, 0, 255, 0.12);
+  transform: scale(1);
+}
+
+.toggle-btn:active {
+  transform: scale(0.98);
+}
