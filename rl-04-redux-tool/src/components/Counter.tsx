@@ -1,7 +1,7 @@
 import { useState } from 'react';
-import { useAppSelector, useAppDispatch } from '../hooks/redux';
-import { increment, decrement, incrementByAmount, reset } from '../store/slices/counterSlice';
 import './Counter.css';
+import { useAppDispatch, useAppSelector } from '../hooks/redux';
+import { decrement, increment, incrementByAmount, reset } from '../store/slices/counterSlice';
 
 const Counter = () => {
   const count = useAppSelector((state) => state.counter.value);

@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { useAppSelector, useAppDispatch } from '../hooks/redux';
+
 import {
   addTodo,
   toggleTodo,
@@ -10,8 +10,9 @@ import {
   fetchTodos,
   addTodoAsync,
 } from '../store/slices/todoSlice';
-import type { Todo } from '../types';
 import './TodoList.css';
+import { useAppDispatch, useAppSelector } from '../hooks/redux';
+import type { Todo } from '../types';
 
 const TodoList = () => {
   const { todos, filter } = useAppSelector((state) => state.todos);
@@ -25,7 +26,7 @@ const TodoList = () => {
     dispatch(fetchTodos());
   }, [dispatch]);
 
-  const filteredTodos = todos.filter((todo) => {
+  const filteredTodos = todos.filter((todo:Todo) => {
     if (filter === 'active') return !todo.completed;
     if (filter === 'completed') return todo.completed;
     return true;
@@ -106,7 +107,7 @@ const TodoList = () => {
       </div>
 
       <div className="todos">
-        {filteredTodos.map((todo) => (
+        {filteredTodos.map((todo:Todo) => (
           <div key={todo.id} className={`todo-item ${todo.completed ? 'completed' : ''}`}>
             <input
               type="checkbox"
